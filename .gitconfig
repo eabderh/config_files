@@ -1,0 +1,31 @@
+[user]
+	name = eabderh
+	email = eabderh@clemson.edu
+[core]
+	editor = vim
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[color "diff"]
+	new = blue
+	old = red
+[color "status"]
+	added = cyan
+	changed = green
+
+# can't alias because of command to executable issue.
+# newer version of git supports aliases to a better degree.
+# all aliases can be found in the bashrc file
+#[alias]
+#	co = checkout
+#	a = add
+#	aa = add --all
+#	ct = commit
+#	st = status
+#	br = branch
+#	hist = 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+
+

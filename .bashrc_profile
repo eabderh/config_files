@@ -1,0 +1,13 @@
+
+
+source /users/eabderh/.bashrc
+
+#if [ -z $SSH_AUTH_SOCK ]; then
+#	echo starting agent
+#	eval $(ssh-agent -s)
+#	echo adding default unsecured key
+#	ssh-add ~/.ssh/apollo08/id_rsa
+#fi
+
+
+
