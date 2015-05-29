@@ -154,8 +154,8 @@ nnoremap zr zR
 nnoremap <leader>d <C-w>j
 nnoremap <leader>e <C-w>k
 "nnoremap <silent> ww :call Togglewindow()<CR>
-nnoremap W :split<CR>
-nnoremap ww :vsplit<CR>
+nnoremap w; :split<CR>
+nnoremap w' :vsplit<CR>
 nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
