@@ -9,6 +9,10 @@
 
 # [*] sources
 
+# the following source was depreciated around TIME: 2015-07-10 22:42:00.
+# the file at location no longer exists
+# source /users/default/.bashrc
+
 
 # [*] exports
 #export TERM=xterm-256color
