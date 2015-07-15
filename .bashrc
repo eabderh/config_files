@@ -8,7 +8,6 @@
 
 
 # [*] sources
-source /users/default/.bashrc
 
 
 # [*] exports
@@ -25,11 +24,11 @@ bind "set show-all-if-ambiguous on"
 
 # [*] alias
 # common commands
-alias ls='/bin/ls --color=auto \
-	--group-directories-first --sort=extension'
-alias ll='/bin/ls -ao --color=auto \
-	--group-directories-first --sort=extension'
-alias cd='cd -P'
+alias ls="/bin/ls --color=auto \
+	--group-directories-first --sort=extension"
+alias ll="/bin/ls -ao --color=auto \
+	--group-directories-first --sort=extension"
+# alias cd='cd -P'
 # start vim sessions
 alias vims='vim -S'
 # start project
