@@ -42,14 +42,16 @@ alias tmux='tmux -2 -u'
 # git
 alias g='git'
 alias gs='git status'
-alias ga='git add'
-alias gaa='git add --all'
-alias gch='git checkout'
-alias gd='git diff'
 alias gcom='git commit'
-alias gl='git log --oneline'
-alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" \
-	--graph --date=short'
+alias gadd='git add'
+alias gaa='git add --all'
+alias gche='git checkout'
+alias gdif='git diff'
+alias glog='git log --oneline'
+alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
+
+# --pretty=format:"%h %ad | %s%d [%an]" \
+#	--graph --date=short'
 
 # [*] martins stuff
 export LANG=C
