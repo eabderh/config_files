@@ -8,7 +8,10 @@
 
 
 # [*] sources
-source /users/default/.bashrc
+
+# the following source was depreciated around TIME: 2015-07-10 22:42:00.
+# the file at location no longer exists
+# source /users/default/.bashrc
 
 
 # [*] exports
@@ -25,11 +28,11 @@ bind "set show-all-if-ambiguous on"
 
 # [*] alias
 # common commands
-alias ls='/bin/ls --color=auto \
-	--group-directories-first --sort=extension'
-alias ll='/bin/ls -ao --color=auto \
-	--group-directories-first --sort=extension'
-alias cd='cd -P'
+alias ls="/bin/ls --color=auto \
+	--group-directories-first --sort=extension"
+alias ll="/bin/ls -ao --color=auto \
+	--group-directories-first --sort=extension"
+# alias cd='cd -P'
 # start vim sessions
 alias vims='vim -S'
 # start project
@@ -39,14 +42,16 @@ alias tmux='tmux -2 -u'
 # git
 alias g='git'
 alias gs='git status'
-alias ga='git add'
-alias gaa='git add --all'
-alias gch='git checkout'
-alias gd='git diff'
 alias gcom='git commit'
-alias gl='git log --oneline'
-alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" \
-	--graph --date=short'
+alias gadd='git add'
+alias gaa='git add --all'
+alias gche='git checkout'
+alias gdif='git diff'
+alias glog='git log --oneline'
+alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
+
+# --pretty=format:"%h %ad | %s%d [%an]" \
+#	--graph --date=short'
 
 # [*] martins stuff
 export LANG=C
@@ -69,6 +74,8 @@ fi
 change_ls_color "di" "01;34"
 # executables
 change_ls_color "ex" "01;32"
+# linked
+change_ls_color "ln" "01;36"
 
 change_ls_color "tw" "01;34"
 change_ls_color "ow" "01;34"

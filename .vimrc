@@ -17,7 +17,7 @@ source ~/.vim/vimrc_ext.vim
 "[*] plugins
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
@@ -109,6 +109,7 @@ colorscheme molokai_ea
 "[*] local mappings
 inoremap jk <Esc>
 nnoremap <silent> <leader>w :w<CR>
+nnoremap <silent> <leader>q :q!<CR>
 "nnoremap  :
 inoremap <silent> <C-p> <Esc>pi
 
@@ -121,7 +122,8 @@ nnoremap <silent> <Space> :call Movemap_toggle()<CR>
 vnoremap <silent> <Space> :call Movemap_toggle()<CR>
 call Movemap_mov()
 set whichwrap+=<,>,h,l,[,]
-set scrolloff=999
+"set scrolloff=999
+set scrolloff=10
 
 
 "[*.*] buffer mappings
@@ -153,8 +155,8 @@ nnoremap zr zR
 nnoremap <leader>d <C-w>j
 nnoremap <leader>e <C-w>k
 "nnoremap <silent> ww :call Togglewindow()<CR>
-nnoremap W :split<CR>
-nnoremap ww :vsplit<CR>
+nnoremap w; :split<CR>
+nnoremap w' :vsplit<CR>
 nnoremap wj <C-w>j
 nnoremap wk <C-w>k
 nnoremap wh <C-w>h
@@ -189,9 +191,9 @@ nnoremap <silent> <leader>X :call Togglestar()<CR>
 "nnoremap <leader>ig
 nnoremap <F7> :set list<CR>
 nnoremap <F8> :set nolist<CR>
-"time insert
-nnoremap <F5> "=strftime("TIME: %F %T")<CR>P
-inoremap <F5> <C-R>=strftime("TIME: %F %T")<CR>
+"time and date insert
+nnoremap <F5> "=strftime("[%F %T %z %s]")<CR>P
+inoremap <F5> <C-R>=strftime("[%F %T %z %s]")<CR>
 
 
 
@@ -213,13 +215,14 @@ set nolist
 "highlight OverLength ctermbg=230 ctermfg=218
 "match OverLength /\%>21v.*/
 
+"set wrap
 "set showbreak=/
 
 
 
 
 
-"LOL FUCK YEAH! VIMSCRIPT ALL THE WAY!
+"FUCK YEAH! VIMSCRIPT ALL THE WAY!
 set colorcolumn=80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200
 
 
