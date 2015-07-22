@@ -74,6 +74,8 @@ fi
 change_ls_color "di" "01;34"
 # executables
 change_ls_color "ex" "01;32"
+# linked
+change_ls_color "ln" "01;36"
 
 change_ls_color "tw" "01;34"
 change_ls_color "ow" "01;34"
