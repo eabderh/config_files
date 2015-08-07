@@ -23,9 +23,6 @@ export PATH=${PATH}:~/dev/shellscripts
 export dev=~/dev/adt/list
 export devtemp=~/dev/templates
 
-# [*] binds
-bind "TAB:menu-complete"
-bind "set show-all-if-ambiguous on"
 
 # [*] alias
 # common commands
@@ -89,4 +86,11 @@ export LS_COLORS
 unset -f change_ls_color
 
 
+
+# [*] binds
+# not in use because of the vi mode enabled in .inputrc.
+# the .inputrc vi mode apparently has its own tab completion.
+# still included just in case...
+#bind "TAB:menu-complete"
+#bind "set show-all-if-ambiguous on"
 
