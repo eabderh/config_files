@@ -80,6 +80,8 @@ change_ls_color "ln" "01;36"
 
 change_ls_color "tw" "01;34"
 change_ls_color "ow" "01;34"
+change_ls_color "*.zip" "01;31"
+change_ls_color "*.7z" "01;31"
 
 export LS_COLORS
 
