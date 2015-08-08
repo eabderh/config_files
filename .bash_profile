@@ -6,5 +6,6 @@ if [ -n "$BASH_VERSION" ]; then
 	fi
 fi
 
+export PATH=$PATH:$HOME/bin
 
 
