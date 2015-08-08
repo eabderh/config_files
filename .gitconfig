@@ -29,8 +29,8 @@
 #	hist = 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 
 
-[url "git@github.com:"]
-	insteadOf = http://github.com/
+#[url "git@github.com:"]
+#	insteadOf = http://github.com/
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
