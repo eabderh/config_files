@@ -17,7 +17,7 @@
 # [*] exports
 #export TERM=xterm-256color
 export TERM=screen-256color-s
-export PS1="\e[37;1m[\u@\h] \w \$ \e[0m"
+export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
 #export PATH=${PATH}:~/enarc
 export PATH=${PATH}:~/dev/shellscripts
 export dev=~/dev/adt/list
