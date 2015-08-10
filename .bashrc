@@ -1,3 +1,11 @@
+
+
+# added in case of other bashrc
+if [ -f /etc/bashrc ]; then
+	source /etc/bashrc
+fi
+
+
 #
 # .bashrc file for CNS UNIX accounts
 #
