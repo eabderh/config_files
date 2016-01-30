@@ -30,6 +30,8 @@ export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
 export PATH=${PATH}:~/dev/shellscripts
 export dev=~/dev/adt/list
 export devtemp=~/dev/templates
+export EDITOR=vim;
+export VISUAL=vim;
 
 
 # [*] alias
