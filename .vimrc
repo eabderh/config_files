@@ -111,7 +111,8 @@ inoremap jk <Esc>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>q :q!<CR>
 "nnoremap  :
-nnoremap <silent> <C-p> gqap
+" paragraph maker
+nnoremap <silent> <C-p> gqgq
 inoremap <silent> <C-p> <Esc>pi
 
 
