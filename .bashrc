@@ -58,8 +58,17 @@ alias gdif='git diff'
 alias glog='git log --oneline'
 alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
-# cd - follow and expand symbolic links
+# cd
 alias cdd='cd -P'
+# follow and expand symbolic links
+function cd_up() {
+	cd $(printf "%0.s../" $(seq 1 $1));
+	# this is a trick of parameter expansion.
+	# printf repeats for every parameter not matched directly
+}
+alias cd.='cd_up'
+# go up n levels
+
 
 # --pretty=format:"%h %ad | %s%d [%an]" \
 #	--graph --date=short'
