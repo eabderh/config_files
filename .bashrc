@@ -58,6 +58,9 @@ alias gdif='git diff'
 alias glog='git log --oneline'
 alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
+# cd - follow and expand symbolic links
+alias cdd='cd -P'
+
 # --pretty=format:"%h %ad | %s%d [%an]" \
 #	--graph --date=short'
 
