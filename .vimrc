@@ -112,8 +112,13 @@ nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>q :q!<CR>
 "nnoremap  :
 " paragraph maker
-nnoremap <silent> <C-p> gqgq
-inoremap <silent> <C-p> <Esc>pi
+nnoremap <silent> <leader>p gqap
+nnoremap <silent> <leader>P gqgq
+"inoremap <silent> <C-p> <Esc>pi
+
+
+"[*.*] completion mappings
+"iabbrev </ </<C-X><C-O>
 
 
 "[*.*] movement mappings
@@ -123,7 +128,7 @@ nnoremap o $a
 nnoremap <silent> <Space> :call Movemap_toggle()<CR>
 vnoremap <silent> <Space> :call Movemap_toggle()<CR>
 call Movemap_mov()
-set whichwrap+=<,>,h,l,[,]
+"set whichwrap+=<,>,h,l,[,]
 "set scrolloff=999
 set scrolloff=10
 
@@ -266,8 +271,8 @@ hi ColorColumn ctermbg=234
 "	abc;
 "	}
 "}
-set cinkeys=0{,*0},:,0#,!^F,o,O,e
-set cinoptions={1s,^-8
+"set cinkeys=0{,*0},:,0#,!^F,o,O,e
+"set cinoptions={1s,^-8
 
 
 "[*.*] searching
