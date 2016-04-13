@@ -271,8 +271,8 @@ hi ColorColumn ctermbg=234
 "	abc;
 "	}
 "}
-"set cinkeys=0{,*0},:,0#,!^F,o,O,e
-"set cinoptions={1s,^-8
+set cinkeys=0{,*0},:,0#,!^F,o,O,e
+set cinoptions={1s,^-8
 
 
 "[*.*] searching
