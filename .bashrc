@@ -35,12 +35,26 @@ export VISUAL=vim;
 
 
 # [*] alias
-# common commands
+# ls commands
 alias ls="/bin/ls --color=auto \
 	--group-directories-first --sort=extension"
 alias ll="/bin/ls -ao --color=auto \
 	--group-directories-first --sort=extension"
-# alias cd='cd -P'
+# pages ls (scrolling ls)
+alias lsp="/bin/ls -ao --color \
+	--group-directories-first --sort=extension |
+	less -r"
+# follow and expand symbolic links
+alias cdd='cd -P'
+# go up n levels
+function cd_up() {
+	cd $(printf "%0.s../" $(seq 1 $1));
+	# this is a trick of parameter expansion.
+	# printf repeats for every parameter not matched directly
+}
+alias cd.='cd_up'
+
+
 # start vim sessions
 alias vims='vim -S'
 # start project
@@ -58,16 +72,6 @@ alias gdif='git diff'
 alias glog='git log --oneline'
 alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
-# cd
-alias cdd='cd -P'
-# follow and expand symbolic links
-function cd_up() {
-	cd $(printf "%0.s../" $(seq 1 $1));
-	# this is a trick of parameter expansion.
-	# printf repeats for every parameter not matched directly
-}
-alias cd.='cd_up'
-# go up n levels
 
 
 # --pretty=format:"%h %ad | %s%d [%an]" \

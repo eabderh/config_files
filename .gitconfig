@@ -34,3 +34,5 @@
 
 [url "git@github.com:eabderh/"]
 	insteadOf = https://github.com/eabderh/
+[rerere]
+	enabled = true
