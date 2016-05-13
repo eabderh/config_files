@@ -33,6 +33,8 @@ export devtemp=~/dev/templates
 export EDITOR=vim;
 export VISUAL=vim;
 
+shopt -s histverify
+
 
 # [*] alias
 # ls commands
