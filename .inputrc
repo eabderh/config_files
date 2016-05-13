@@ -15,6 +15,7 @@ set keymap vi-command
 "F": end-of-line
 "S": beginning-of-line
 "o": "Fa"
+"/": reverse-search-history
 
 set keymap vi-insert
 "jk": "\e"
