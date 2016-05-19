@@ -1,3 +1,5 @@
+" code adapted from https://github.com/chase/vim-ansible-yaml
+" and https://gist.github.com/iangreenleaf/871107
 
 setlocal autoindent shiftwidth=2 tabstop=2 expandtab
 setlocal indentexpr=GetYamlIndent(v:lnum)
@@ -5,7 +7,6 @@ setlocal indentkeys=!^Fo,O,0#,<:>,-
 setlocal nosmartindent
 
 function! GetYamlIndent(lnum)
-	echo "test"
 	let prevlnum = a:lnum - 1
 	if prevlnum == 0
 		return 0
@@ -27,9 +28,6 @@ function! GetYamlIndent(lnum)
 	else
 		return indent
 	endif
-
 endfunction
-
-
 
 
