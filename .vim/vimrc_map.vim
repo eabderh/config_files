@@ -66,7 +66,8 @@ function Movemap_mov()
 	nnoremap S 0
 	nnoremap d 8j
 	nnoremap D 16j
-	nnoremap f e<Right>
+	"nnoremap f e<Right>
+	nnoremap f w
 	nnoremap F $
 	nnoremap e 8k
 	nnoremap E 16k

@@ -36,6 +36,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 	" shows whitespace
 Plugin 'tpope/vim-fugitive'
 	" git wrapper
+Plugin 'junegunn/vim-easy-align'
+	" alignment
 
 " not quite working...
 "Plugin 'bling/vim-airline'
@@ -94,6 +96,29 @@ nnoremap <silent> <leader>x :ToggleWhitespace<CR>
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
 
+
+"[*.*.*] vim-easy-align
+"vnoremap mi <Plug>(EasyAlign)
+xmap <leader>i <Plug>(EasyAlign)
+let g:easy_align_delimiters = {
+\  ' ': { 'pattern': ' ',  'left_margin': 0, 'right_margin': 0, 'stick_to_left': 0 },
+\  '=': { 'pattern': '===\|<=>\|\(&&\|||\|<<\|>>\)=\|=\~[#?]\?\|=>\|[:+/*!%^=><&|.?-]\?=[#?]\?',
+\                          'left_margin': 1, 'right_margin': 1, 'stick_to_left': 0 },
+\  ':': { 'pattern': ':',  'left_margin': 1, 'right_margin': 1, 'stick_to_left': 0 },
+\  ',': { 'pattern': ',',  'left_margin': 0, 'right_margin': 1, 'stick_to_left': 1 },
+\  '|': { 'pattern': '|',  'left_margin': 1, 'right_margin': 1, 'stick_to_left': 0 },
+\  '.': { 'pattern': '\.', 'left_margin': 0, 'right_margin': 0, 'stick_to_left': 0 },
+\  '#': { 'pattern': '#\+', 'delimiter_align': 'l', 'ignore_groups': ['!Comment']  },
+\  '"': { 'pattern': '"\+', 'delimiter_align': 'l', 'ignore_groups': ['!Comment']  },
+\  '&': { 'pattern': '\\\@<!&\|\\\\',
+\                          'left_margin': 1, 'right_margin': 1, 'stick_to_left': 0 },
+\  '{': { 'pattern': '(\@<!{',
+\                          'left_margin': 1, 'right_margin': 1, 'stick_to_left': 0 },
+\  '}': { 'pattern': '}',  'left_margin': 1, 'right_margin': 0, 'stick_to_left': 0 }
+\ }
+
+
+
 "[*] colorscheme
 syntax on
 "colorscheme mustang
@@ -110,6 +135,7 @@ colorscheme molokai_ea
 inoremap jk <Esc>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>q :q!<CR>
+nnoremap <silent> <leader>b :bd<CR>
 "nnoremap  :
 " paragraph maker
 nnoremap <silent> <leader>p gqap
@@ -189,7 +215,8 @@ nnoremap <silent> ;q :q!<CR>
 
 
 "[*.*] command mappings
-cnoremap a<CR> Unite file buffer<CR>
+"cnoremap a<CR> Unite file buffer<CR>
+nnoremap <leader>u :Unite file buffer<CR>
 
 
 "[*.*] other
