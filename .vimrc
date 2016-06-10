@@ -38,6 +38,12 @@ Plugin 'tpope/vim-fugitive'
 	" git wrapper
 Plugin 'junegunn/vim-easy-align'
 	" alignment
+Plugin 'digitaltoad/vim-pug'
+	" jade (pug) vim filetype
+Plugin 'hail2u/vim-css3-syntax.git'
+	" css filetype
+Plugin 'cakebaker/scss-syntax.vim'
+	" sass filetype
 
 " not quite working...
 "Plugin 'bling/vim-airline'
