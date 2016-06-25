@@ -168,6 +168,8 @@ set scrolloff=10
 "[*.*] buffer mappings
 nnoremap <silent> <leader>f :w<CR>:bnext<CR>
 nnoremap <silent> <leader>s :w<CR>:bprevious<CR>
+nnoremap <silent> <leader>F :bnext<CR>
+nnoremap <silent> <leader>S :bprevious<CR>
 "nnoremap <Space> z.
 "map z z.
 
