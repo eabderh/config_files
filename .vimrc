@@ -44,6 +44,11 @@ Plugin 'hail2u/vim-css3-syntax.git'
 	" css filetype
 Plugin 'cakebaker/scss-syntax.vim'
 	" sass filetype
+Plugin 'LucHermitte/lh-vim-lib'
+	" plugin for LucHermitte library
+Plugin 'LucHermitte/local_vimrc'
+	" local vimrc files
+
 
 " not quite working...
 "Plugin 'bling/vim-airline'
