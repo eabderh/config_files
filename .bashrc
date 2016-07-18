@@ -63,6 +63,7 @@ alias vims='vim -S'
 alias dev='cd $dev;vs'
 # tmux
 alias tmux='tmux -2 -u'
+alias tmuxa='tmux attach-session -t'
 # git
 alias g='git'
 alias gs='git status'
