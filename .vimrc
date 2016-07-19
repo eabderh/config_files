@@ -171,8 +171,8 @@ set scrolloff=10
 
 
 "[*.*] buffer mappings
-nnoremap <silent> <leader>f :<C-u>Save<CR>:bnext<CR>
-nnoremap <silent> <leader>s :<C-u>Save<CR>:bprevious<CR>
+nnoremap <silent> <leader>f :<C-u>SmartSave<CR>:bnext<CR>
+nnoremap <silent> <leader>s :<C-u>SmartSave<CR>:bprevious<CR>
 nnoremap <silent> <leader>F :bnext<CR>
 nnoremap <silent> <leader>S :bprevious<CR>
 nnoremap <silent> <leader>m :b#<CR>
@@ -213,7 +213,7 @@ nnoremap we :only<CR>
 
 
 "[*.*] saving mappings (save)
-command -nargs=0 -bar Save if &modified
+command -nargs=0 -bar SmartSave if &modified
 	\|	if empty(bufname('%'))
 	\|		browse confirm write
 	\|	else
@@ -221,9 +221,9 @@ command -nargs=0 -bar Save if &modified
 	\|	endif
 	\|endif
 
-"inoremap <silent> jw <Esc>:<C-u>Save<CR>i
+"inoremap <silent> jw <Esc>:<C-u>SmartSave<CR>i
 "inoremap <silent> jx <Esc>:x<CR>
-nnoremap <silent> ;w :<C-u>Save<CR>
+nnoremap <silent> ;w :<C-u>SmartSave<CR>
 nnoremap <silent> ;x :x<CR>
 nnoremap <silent> ;dd :w<CR>:bd<CR>
 nnoremap <silent> ;q :q!<CR>
