@@ -64,6 +64,7 @@ alias dev='cd $dev;vs'
 # tmux
 alias tmux='tmux -2 -u'
 alias tmuxa='tmux attach-session -t'
+alias tmuxo='tmux attach-session -t 0'
 # git
 alias g='git'
 alias gs='git status'

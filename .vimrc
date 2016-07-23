@@ -335,7 +335,7 @@ set foldmethod=syntax
 set foldlevel=4
 autocmd FileType c setlocal foldmethod=syntax
 
-"[*.*] get rid of latex files "press enter to continue" messages
+"[*.*] get rid of latex files 'press enter to continue' messages
 set cmdheight=2
 
 
