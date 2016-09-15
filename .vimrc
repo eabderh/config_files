@@ -48,6 +48,8 @@ Plugin 'LucHermitte/lh-vim-lib'
 	" plugin for LucHermitte library
 Plugin 'LucHermitte/local_vimrc'
 	" local vimrc files
+Plugin 'kchmck/vim-coffee-script'
+	" coffeescript filetype
 
 
 " not quite working...
@@ -146,11 +148,11 @@ colorscheme molokai_ea
 inoremap jk <Esc>
 nnoremap <silent> <leader>w :w<CR>
 nnoremap <silent> <leader>q :q!<CR>
-nnoremap <silent> <leader>b :bd<CR>
+nnoremap <silent> <leader>t :bd<CR>
 "nnoremap  :
 " paragraph maker
-nnoremap <silent> <leader>p gqap
-nnoremap <silent> <leader>P gqgq
+nnoremap <silent> <leader>p gqgq
+nnoremap <silent> <leader>P gqap
 "inoremap <silent> <C-p> <Esc>pi
 
 
@@ -243,6 +245,11 @@ nnoremap <F8> :set nolist<CR>
 "time and date insert
 nnoremap <F5> "=strftime("[%F %T %z %s]")<CR>P
 inoremap <F5> <C-R>=strftime("[%F %T %z %s]")<CR>
+
+
+"[*.*] build
+nnoremap <silent> <leader>b :make<CR>
+
 
 
 
