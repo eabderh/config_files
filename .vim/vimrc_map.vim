@@ -18,13 +18,12 @@ endfunction
 
 
 function Movemap_normal()
-
 	" normal
-
 	nunmap J
 	nunmap K
 	nunmap U
-	nunmap ci
+	nunmap cl
+	nunmap cc
 	nunmap b
 	" movment
 	nunmap s
@@ -35,9 +34,7 @@ function Movemap_normal()
 	nunmap F
 	nunmap e
 	nunmap E
-
 	" visual
-
 	vunmap i
 	vunmap t
 	" movment
@@ -55,11 +52,11 @@ endfunction
 function Movemap_mov()
 
 	" normal
-
 	nnoremap J 20j
 	nnoremap K 20k
 	nnoremap U <C-R>
-	nnoremap ci ciw
+	nnoremap cl cc
+	nnoremap cc ciw
 	nnoremap b <C-v>
 	" movment
 	nnoremap s b
@@ -71,9 +68,7 @@ function Movemap_mov()
 	nnoremap F $
 	nnoremap e 8k
 	nnoremap E 16k
-
 	" visual
-
 	vnoremap i I
 	vnoremap t d
 	" movment
