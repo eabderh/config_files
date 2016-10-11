@@ -37,6 +37,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
+export PYTHONPATH=$HOME/dev/python/lib
+export PYTHONSTARTUP=$HOME/.pythonstartup.py
+
+
 shopt -s histverify
 
 
