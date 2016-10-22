@@ -147,6 +147,7 @@ colorscheme molokai_ea
 "[*] local mappings
 inoremap jk <Esc>
 nnoremap <silent> <leader>w :w<CR>
+nnoremap <silent> <leader>x :xa<CR>
 nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>t :bd<CR>
 "nnoremap  :
