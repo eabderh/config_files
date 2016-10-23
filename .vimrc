@@ -50,6 +50,8 @@ Plugin 'LucHermitte/local_vimrc'
 	" local vimrc files
 Plugin 'kchmck/vim-coffee-script'
 	" coffeescript filetype
+Plugin 'tpope/vim-capslock'
+	" software capslock
 
 
 " not quite working...
@@ -130,6 +132,9 @@ let g:easy_align_delimiters = {
 \  '}': { 'pattern': '}',  'left_margin': 1, 'right_margin': 0, 'stick_to_left': 0 }
 \ }
 
+"[*.*.*] vim-capslock
+imap <silent> <C-c> <Plug>CapsLockToggle
+nmap <silent> <leader>c <Plug>CapsLockToggle
 
 
 "[*] colorscheme
@@ -176,6 +181,8 @@ set scrolloff=10
 "[*.*] buffer mappings
 nnoremap <silent> <leader>f :<C-u>SmartSave<CR>:bnext<CR>
 nnoremap <silent> <leader>s :<C-u>SmartSave<CR>:bprevious<CR>
+nnoremap <silent> <leader>. :<C-u>SmartSave<CR>:bnext<CR>
+nnoremap <silent> <leader>, :<C-u>SmartSave<CR>:bprevious<CR>
 nnoremap <silent> <leader>F :bnext<CR>
 nnoremap <silent> <leader>S :bprevious<CR>
 nnoremap <silent> <leader>m :b#<CR>
@@ -346,5 +353,10 @@ autocmd FileType c setlocal foldmethod=syntax
 "[*.*] get rid of latex files 'press enter to continue' messages
 set cmdheight=2
 
+
+"[*.*] Path
+
+"Python
+set path+=~/dev/python/lib
 
 
