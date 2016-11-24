@@ -52,6 +52,14 @@ Plugin 'kchmck/vim-coffee-script'
 	" coffeescript filetype
 Plugin 'tpope/vim-capslock'
 	" software capslock
+Plugin 'ton/vim-bufsurf'
+	" fix buffer ordering
+Plugin 'nikvdp/ejs-syntax'
+	" ejs filetype
+
+
+"Plugin 'jlanzarotta/bufexplorer'
+	" bufexplorer
 
 
 " not quite working...
@@ -136,6 +144,10 @@ let g:easy_align_delimiters = {
 imap <silent> <C-c> <Plug>CapsLockToggle
 nmap <silent> <leader>c <Plug>CapsLockToggle
 
+"[*.*.*] bufsurf
+"nnoremap <silent> <leader>f :BufSurfForward<CR>
+"nnoremap <silent> <leader>s :BufSurfBack<CR>
+
 
 "[*] colorscheme
 syntax on
@@ -181,12 +193,13 @@ set scrolloff=10
 "[*.*] buffer mappings
 nnoremap <silent> <leader>f :<C-u>SmartSave<CR>:bnext<CR>
 nnoremap <silent> <leader>s :<C-u>SmartSave<CR>:bprevious<CR>
-nnoremap <silent> <leader>. :<C-u>SmartSave<CR>:bnext<CR>
-nnoremap <silent> <leader>, :<C-u>SmartSave<CR>:bprevious<CR>
+nnoremap <silent> . :<C-u>SmartSave<CR>:bnext<CR>
+nnoremap <silent> , :<C-u>SmartSave<CR>:bprevious<CR>
 nnoremap <silent> <leader>F :bnext<CR>
 nnoremap <silent> <leader>S :bprevious<CR>
 nnoremap <silent> <leader>m :b#<CR>
 nnoremap <leader>i :b
+nnoremap <leader>dd :bd<CR>
 "nnoremap <Space> z.
 "map z z.
 
