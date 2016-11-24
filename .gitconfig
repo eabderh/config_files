@@ -1,6 +1,6 @@
 [user]
-	name = eabderh
-	email = eabderh@clemson.edu
+	name = elias
+	email = elias@bytekite.io
 [core]
 	editor = vim
 [color]
@@ -36,3 +36,6 @@
 	insteadOf = https://github.com/eabderh/
 [rerere]
 	enabled = true
+
+[push]
+	default = current
