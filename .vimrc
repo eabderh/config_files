@@ -348,6 +348,10 @@ set cinoptions={1s,^-8
 "[*.*] searching
 set hlsearch
 
+"[*.*] keyword
+set iskeyword+=-
+
+
 
 "[*.*] tab settings
 set noexpandtab
