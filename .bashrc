@@ -27,7 +27,7 @@ fi
 export TERM=screen-256color-s
 export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
 #export PATH=${PATH}:~/enarc
-export PATH=${PATH}:~/dev/shellscripts
+export PATH=${PATH}:~/dev/userbin
 export dev=~/dev/adt/list
 export devtemp=~/dev/templates
 export EDITOR=vim;
@@ -40,7 +40,7 @@ export LANGUAGE=en_US.UTF-8
 export PYTHONPATH=$HOME/dev/python/lib
 export PYTHONSTARTUP=$HOME/.pythonstartup.py
 
-
+#export HISTORY=10000
 shopt -s histverify
 
 
