@@ -44,10 +44,10 @@ Plugin 'hail2u/vim-css3-syntax.git'
 	" css filetype
 Plugin 'cakebaker/scss-syntax.vim'
 	" sass filetype
-Plugin 'LucHermitte/lh-vim-lib'
-	" plugin for LucHermitte library
-Plugin 'LucHermitte/local_vimrc'
-	" local vimrc files
+"Plugin 'LucHermitte/lh-vim-lib'
+"	" plugin for LucHermitte library
+"Plugin 'LucHermitte/local_vimrc'
+"	" local vimrc files
 Plugin 'kchmck/vim-coffee-script'
 	" coffeescript filetype
 Plugin 'tpope/vim-capslock'
@@ -56,6 +56,8 @@ Plugin 'ton/vim-bufsurf'
 	" fix buffer ordering
 Plugin 'nikvdp/ejs-syntax'
 	" ejs filetype
+Plugin 'embear/vim-localvimrc'
+	" local vimrc files
 
 
 "Plugin 'jlanzarotta/bufexplorer'
@@ -148,6 +150,9 @@ nmap <silent> <leader>c <Plug>CapsLockToggle
 "nnoremap <silent> <leader>f :BufSurfForward<CR>
 "nnoremap <silent> <leader>s :BufSurfBack<CR>
 
+"[*.*.*] local vimrc files - vim-localvimrc
+let g:localvimrc_name = [ '.lvimrc', '.local.vimrc' ]
+let g:localvimrc_ask = 0
 
 "[*] colorscheme
 syntax on
