@@ -324,25 +324,35 @@ hi ColorColumn ctermbg=234
 
 
 "[*.*] syntax
+
 "mode:
-"func()
-"{
-"	if ()
-"	 	{
-"	 	abc;
-"	 	}
-"}
+"	func()
+"	{
+"		if ()
+"		 	{
+"		 	abc;
+"		 	}
+"	}
 "set cinkeys=0{,0},:,0#,!^F,o,O,e
 "set cinoptions={1s
 
 "mode:
-"func()
-"{
-"if () {
-"	abc;
+"	func()
+"	{
+"	if () {
+"		abc;
+"		}
 "	}
-"}
-set cinkeys=0{,*0},:,0#,!^F,o,O,e
+"set cinkeys=0{,*0},:,0#,!^F,o,O,e
+"set cinoptions={1s,^-8
+
+"mode:
+"	func() {
+"	if () {
+"		abc;
+"	}
+"	}
+set cinkeys=0{,0},:,0#,!^F,o,O,e
 set cinoptions={1s,^-8
 
 

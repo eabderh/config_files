@@ -72,7 +72,7 @@ alias dev='cd $dev;vs'
 # tmux
 alias tmux='tmux -2 -u'
 alias tmuxa='tmux attach-session -t'
-alias tmuxo='tmux attach-session -t 0'
+alias tmuxo='tmux attach-session #'
 alias tmuxs='tmux new -s'
 # tmuxp
 alias tmuxl='tmuxp load'
