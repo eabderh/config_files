@@ -74,8 +74,9 @@ alias tmux='tmux -2 -u'
 alias tmuxa='tmux attach-session -t'
 alias tmuxo='tmux attach-session #'
 alias tmuxs='tmux new -s'
+alias tmuxl='tmux list-sessions'
 # tmuxp
-alias tmuxl='tmuxp load'
+alias tmuxload='tmuxp load'
 # git
 alias g='git'
 alias gs='git status'
