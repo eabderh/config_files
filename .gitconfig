@@ -39,3 +39,5 @@
 
 [push]
 	default = current
+[log]
+	date = iso
