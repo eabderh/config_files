@@ -70,7 +70,7 @@ alias vims='vim -S'
 # start project
 alias dev='cd $dev;vs'
 # tmux
-alias tmux='tmux -2 -u'
+alias tm='tmux -2 -u'
 function tmux_attach() {
 	if [ -z "$1" ]; then
 		tmux attach
@@ -78,12 +78,12 @@ function tmux_attach() {
 		tmux attach-session -t $1
 	fi
 }
-alias tmuxa='tmux_attach'
-alias tmuxo='tmux attach-session #'
-alias tmuxs='tmux new -s'
-alias tmuxls='tmux list-sessions'
+alias tma='tmux_attach'
+alias tmo='tmux attach-session #'
+alias tms='tmux new -s'
+alias tmls='tmux list-sessions'
 # tmuxp
-alias tmuxload='tmuxp load'
+alias tmload='tmuxp load'
 # git
 alias g='git'
 alias gs='git status'
