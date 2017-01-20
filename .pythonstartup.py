@@ -1,6 +1,6 @@
 
 import os
-import imploder
+from imploder import *
 
 startupfile_local = 'pyload.py'
 if os.path.lexists(startupfile_local):
