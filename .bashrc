@@ -6,29 +6,37 @@
 #fi
 
 
-# [*] exports
-#export TERM=xterm-256color
-export TERM=screen-256color-s
-export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
-#export PATH=${PATH}:~/enarc
+
+# SYSTEM ----------------------------------------------------------------------
+
+# os
 export PATH=${PATH}:~/dev/userbin
-export dev=~/dev/adt/list
-export devtemp=~/dev/templates
+
+# editor
 export EDITOR=vim;
 export VISUAL=vim;
 
-export LC_ALL=en_US.UTF-8
+# encoding
+export LC_CTYPE=C
+#export LANG=C
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
+# command line
+shopt -s histverify
+#export TERM=xterm-256color
+export TERM=screen-256color-s
+export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
+
+# python
 export PYTHONPATH=$HOME/dev/python/lib
 export PYTHONSTARTUP=$HOME/.pythonstartup.py
 
-#export HISTORY=10000
-shopt -s histverify
+
+# ALIASES ---------------------------------------------------------------------
 
 
-# [*] alias
 # ls commands
 alias ls="/bin/ls --color=auto \
 	--group-directories-first --sort=extension"
@@ -38,6 +46,9 @@ alias ll="/bin/ls -ao --color=auto \
 alias lsp="/bin/ls -ao --color \
 	--group-directories-first --sort=extension |
 	less -r"
+
+
+# cd commands
 # follow and expand symbolic links
 alias cdd='cd -P'
 # go up n levels
@@ -49,10 +60,6 @@ function cd_up() {
 alias cd.='cd_up'
 
 
-# start vim sessions
-alias vims='vim -S'
-# start project
-alias dev='cd $dev;vs'
 # tmux
 alias tm='tmux -2 -u'
 function tmux_attach() {
@@ -68,6 +75,8 @@ alias tms='tmux new -s'
 alias tmls='tmux list-sessions'
 # tmuxp
 alias tmload='tmuxp load'
+
+
 # git
 alias g='git'
 alias gs='git status'
@@ -81,16 +90,8 @@ alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
 
 
-# --pretty=format:"%h %ad | %s%d [%an]" \
-#	--graph --date=short'
+# LS COLORS -------------------------------------------------------------------
 
-# [*] martins stuff
-export LANG=C
-export LC_CTYPE=C
-
-
-
-# [*] ls colors
 # change colors of ls output
 function change_ls_color() {
 if [[ $LS_COLORS == *$1* ]]; then
@@ -124,7 +125,8 @@ unset -f change_ls_color
 
 
 
-# [*] binds
+# BINDS -----------------------------------------------------------------------
+
 # not in use because of the vi mode enabled in .inputrc.
 # the .inputrc vi mode apparently has its own tab completion.
 # still included just in case...
