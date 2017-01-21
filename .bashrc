@@ -89,6 +89,10 @@ alias glog='git log --oneline'
 alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
 
+# python
+alias py='python'
+
+
 
 # LS COLORS -------------------------------------------------------------------
 
