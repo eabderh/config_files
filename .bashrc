@@ -1,25 +1,9 @@
 
 
 # added in case of other bashrc
-if [ -f /etc/bashrc ]; then
-	source /etc/bashrc
-fi
-
-
-#
-# .bashrc file for CNS UNIX accounts
-#
-#
-# keep the following line present so your account will work in
-# the CNS UNIX environment
-#
-
-
-# [*] sources
-
-# the following source was depreciated around TIME: 2015-07-10 22:42:00.
-# the file at location no longer exists
-# source /users/default/.bashrc
+#if [ -f /etc/bashrc ]; then
+#	source /etc/bashrc
+#fi
 
 
 # [*] exports
