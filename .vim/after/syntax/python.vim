@@ -1,6 +1,6 @@
 
 
-syntax keyword Special self
+syntax keyword NormalBold self
 
 
 
