@@ -27,7 +27,9 @@ export LANGUAGE=en_US.UTF-8
 shopt -s histverify
 #export TERM=xterm-256color
 export TERM=screen-256color-s
-export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
+export NICKNAME=bananalias
+export PS1="\[\e[37;1m\][\u@$NICKNAME] \w \$ \[\e[0m\]"
+#export PS1="\[\e[37;1m\][\u@\h] \w \$ \[\e[0m\]"
 
 # python
 export PYTHONPATH=$HOME/dev/python/lib
