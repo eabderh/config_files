@@ -91,6 +91,11 @@ alias glog='git log --oneline'
 alias ghis='git log --oneline --graph --all --decorate --abbrev-commit'
 
 
+# vim
+alias vimf='vim $(find . -maxdepth 1 -exec file {} + '\
+'| grep text | cut -d: -f1)'
+
+
 # python
 alias py='python'
 
