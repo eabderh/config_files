@@ -10,6 +10,7 @@
 # SYSTEM ----------------------------------------------------------------------
 
 # os
+export PATH=${PATH}:~/.local/bin
 export PATH=${PATH}:~/dev/userbin
 
 # editor
@@ -35,6 +36,11 @@ export PS1="\[\e[37;1m\][\u@$NICKNAME] \w \$ \[\e[0m\]"
 export PYTHONPATH=$HOME/dev/python/lib
 export PYTHONSTARTUP=$HOME/.pythonstartup.py
 
+# golang
+export PATH=$PATH:/usr/local/go/bin
+JAMES=$HOME/dev/james
+export GOPATH=$JAMES/go
+export PATH=$PATH:$JAMES/go/bin
 
 # ALIASES ---------------------------------------------------------------------
 
@@ -99,6 +105,9 @@ alias vimf='vim $(find . -maxdepth 1 -exec file {} + '\
 # python
 alias py='python'
 
+
+# go
+#alias go='export GOPATH=$GOPATH:$PWD'
 
 
 # LS COLORS -------------------------------------------------------------------
