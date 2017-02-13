@@ -56,7 +56,7 @@ alias lsp="/bin/ls -ao --color \
 	less -r"
 
 
-# cd commands
+# cd
 # follow and expand symbolic links
 alias cdd='cd -P'
 # go up n levels
