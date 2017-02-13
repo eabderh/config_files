@@ -106,6 +106,12 @@ alias vimf='vim $(find . -maxdepth 1 -exec file {} + '\
 alias py='python'
 
 
+# tree
+
+
+alias trees='tree -d -L'
+
+
 # go
 #alias go='export GOPATH=$GOPATH:$PWD'
 
