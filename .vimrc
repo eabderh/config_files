@@ -54,7 +54,8 @@ Plugin 'nikvdp/ejs-syntax'
 	" ejs filetype
 Plugin 'embear/vim-localvimrc'
 	" local vimrc files
-
+Plugin 'thinca/vim-visualstar'
+	" star what is in visual
 
 "Plugin 'jlanzarotta/bufexplorer'
 	" bufexplorer
