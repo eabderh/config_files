@@ -88,6 +88,8 @@ alias tmload='tmuxp load'
 # git
 alias g='git'
 alias gs='git status'
+alias gs='git status'
+alias gs.='git status .'
 alias gcom='git commit'
 alias gadd='git add'
 alias gaa='git add --all'
